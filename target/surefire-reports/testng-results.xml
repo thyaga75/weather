@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.yahoo.weather.platform.WeatherTest" duration-ms="1224" started-at="2016-04-13T06:51:04Z" finished-at="2016-04-13T06:51:05Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1224" started-at="2016-04-13T06:51:04Z" finished-at="2016-04-13T06:51:05Z">
+      <class name="com.yahoo.weather.platform.WeatherTest">
+        <test-method status="PASS" signature="testgetCustomerNameHttp()[pri:0, instance:com.yahoo.weather.platform.WeatherTest@49e4cb85]" name="testgetCustomerNameHttp" duration-ms="1209" started-at="2016-04-12T23:51:04Z" finished-at="2016-04-12T23:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetCustomerNameHttp -->
+      </class> <!-- com.yahoo.weather.platform.WeatherTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.yahoo.weather.platform.WeatherTest -->
+</testng-results>
