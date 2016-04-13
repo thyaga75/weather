@@ -12,8 +12,8 @@ import org.apache.http.util.EntityUtils;
 import com.jayway.jsonpath.JsonPath;
 
 public class Utilities {
-	public String readWeather(String url, String jpath) throws IOException {
-		String weather = null;
+	public String readJSONData(String url, String jpath) throws IOException {
+		String response = null;
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {
 			HttpPost httpSet = new HttpPost(url);
@@ -24,8 +24,8 @@ public class Utilities {
 				//System.out.println("entity1--->>>" + entity1);
 				String body = EntityUtils.toString(entity1);
 				//System.out.println("body--->>>" + body);
-				weather = JsonPath.parse(body).read(jpath);
-				//System.out.println("weaher--->>>" + weather);
+				response = JsonPath.parse(body).read(jpath);
+				//System.out.println("weather--->>>" + weather);
 
 			} finally {
 				response1.close();
@@ -36,6 +36,6 @@ public class Utilities {
 		} finally {
 			httpclient.close();
 		}
-		return weather;
+		return response;
 	}
 }
