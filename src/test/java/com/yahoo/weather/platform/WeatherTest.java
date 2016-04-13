@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.yahoo.weather.platform.Utilities;
-
+// to test weather consdition
 public class WeatherTest {
 	@Test
 	public void testgetCustomerNameHttp() {
